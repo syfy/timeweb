@@ -19,5 +19,5 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
         self.wfile.write(str.encode(str(datetime.now(manila).strftime('%d %b %Y %H:%M:%S'))))
 
 
-httpd = HTTPServer(('localhost', 8001), SimpleHTTPRequestHandler)
+httpd = HTTPServer(('localhost', 8002), SimpleHTTPRequestHandler)
 httpd.serve_forever()
